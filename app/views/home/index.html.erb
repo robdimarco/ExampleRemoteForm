@@ -1,0 +1,7 @@
+<div id="notification"></div>
+<%= form_for "#", :url=>root_path, :remote => true, :html=>{:id=>"main_form"} do |f|%>
+  <dl>
+    <dt><%= text_field_tag :my_data %></dt>
+  </dl>
+  <%= f.submit "Save"%>
+<% end %>
